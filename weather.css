@@ -3,10 +3,19 @@ h1 {
     text-align: center;
 }
 
+h2{
+    background-color: lightgray;
+    text-align: center;
+}
+
 .jumbotron {
     border: 1px solid;
 }
 
 #search {
+    border: 1px solid;
+}
+
+.col-md-2 {
     border: 1px solid;
 }

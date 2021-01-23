@@ -10,15 +10,31 @@
 </head>
 <body>
     <h1>Weather Dashboard</h1><br>
+    <h2>Enter a city in the search bar below</h2><br>
     <div class="container">
         <div class="row">
-            <div class="col-md-4" id="search">Search for a city: <input type="text"></input><button type="button">Search</button></div>
+            <div class="col-md-4" id="search"><input type="text"></input>   <button type="button">Search</button></div>
             <div class="col-md-8"><div class="jumbotron jumbotron-fluid">
                 <div class="container">
                   <h1 class="display-4">City here</h1>
-                  <p class="lead">weather data here</p>
+                  <p class="lead" id="temp">weather data here</p>
+                  <p class="lead" id="humidity">weather data here</p>
+                  <p class="lead" id="wind">weather data here</p>
+                  <p class="lead" id="uv">weather data here</p>
                 </div>
               </div></div>
+        </div>
+    </div><br>
+    <h1>5-Day Forecast</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-2">Day 1</div>
+            <div class="col-md-2">Day 2</div>
+            <div class="col-md-2">Day 3</div>
+            <div class="col-md-2">Day 4</div>
+            <div class="col-md-2">Day 5</div>
+            <div class="col-md-1"></div>
         </div>
     </div>
 
