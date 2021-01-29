@@ -1,14 +1,14 @@
 
 
-
+let city = $("#searchInput").val();
 
 var APIKey = "3a1ea0eab5865c5368524eab91408d4f";
 var queryURL =  "https://api.openweathermap.org/data/2.5/weather?" +
-"q=Sartell&appid=" + APIKey;
+"q=sartell&appid=" + APIKey;
 
 var forecastURL = "https://api.openweathermap.org/data/2.5/forecast?" + "q=sartell&cnt=5&appid=" + APIKey
 
-var input = document.querySelector("#searchInput");
+
 var search = document.querySelector("#searchButton");
 
 
@@ -68,7 +68,7 @@ $("#searchButton").on("click", function () {
             $("#dayFour").html("<h6>" + response.list[3].main.temp + " Degrees Celsius</h6>");
             $("#dayFive").html("<h6>" + response.list[4].main.temp + " Degrees Celsius</h6>");
             
-
+            
     })
 })
 
