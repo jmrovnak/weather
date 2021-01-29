@@ -6,6 +6,8 @@ var APIKey = "3a1ea0eab5865c5368524eab91408d4f";
 var queryURL =  "https://api.openweathermap.org/data/2.5/weather?" +
 "q=Sartell&appid=" + APIKey;
 
+var forecastURL = "https://api.openweathermap.org/data/2.5/forecast?" + "q=sartell&cnt=5&appid=" + APIKey
+
 var input = document.querySelector("#searchInput");
 var search = document.querySelector("#searchButton");
 
@@ -43,10 +45,20 @@ $.ajax ({
 
     $("#searchOne").append(history);
 
-
-
-    
-  
-})
+   })
 });
+
+$("#searchButton").on("click", function () {
+    console.log("test 2");
+
+    $.ajax ({
+        url: forecastURL,
+        method:"GET"
+    })
+
+    .then(function(response) {
+            console.log(forecastURL);
+            console.log(response);
+    })
+})
 
