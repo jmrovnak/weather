@@ -59,6 +59,16 @@ $("#searchButton").on("click", function () {
     .then(function(response) {
             console.log(forecastURL);
             console.log(response);
+
+            console.log(response.list[0].main.temp);
+
+            $("#dayOne").html("<h6>" + response.list[0].main.temp + " Degrees Celsius</h6>");
+            $("#dayTwo").html("<h6>" + response.list[1].main.temp + " Degrees Celsius</h6>");
+            $("#dayThree").html("<h6>" + response.list[2].main.temp + " Degrees Celsius</h6>");
+            $("#dayFour").html("<h6>" + response.list[3].main.temp + " Degrees Celsius</h6>");
+            $("#dayFive").html("<h6>" + response.list[4].main.temp + " Degrees Celsius</h6>");
+            
+
     })
 })
 
